@@ -1,0 +1,23 @@
+.hero{
+  background: #333;
+}
+.hero .card{
+  padding: 80px;
+  text-align: center;
+  background: #333;
+  color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+  }
+
+.hero h2 {
+font-size: 20px;
+}
+
+.y_me{
+    font-size:18px;
+    color: rgb(163, 163, 3);
+    font-weight:300;
+}

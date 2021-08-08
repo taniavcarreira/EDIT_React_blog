@@ -3,7 +3,9 @@ body {
   font-family: 'Dosis', sans-serif;
   min-height: 100vh;
 }
-.App{
+.y{
+  color:#a3a303;
+  font-weight:600;
 }
 /* .App {
   text-align: center;

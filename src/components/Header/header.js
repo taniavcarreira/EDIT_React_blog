@@ -8,17 +8,19 @@ import './header.css'
 
 const Header = (props) => {
   return (
-    <header className="header container">
-      <div className="headerMenu row">
-        <nav className="navbar col">
-          <a href="#">Y-CanIfly </a>
-          <a href="#">About me </a>
-          <a href="#">Curriculum </a>
-          <a href="#">Portfolio </a>
-          <a href="#">Contact</a>
-        </nav>
-        <div className="social col-2">
-          Social Media Links
+    <header className="header">
+      <div className="container">
+        <div className="headerMenu row">
+          <nav className="navbar col">
+            <a href="#"><span class="y">Y</span>-CanIfly</a>
+            <a href="#">About me </a>
+            <a href="#">Curriculum </a>
+            <a href="#">Portfolio </a>
+            <a href="#">Contact</a>
+          </nav>
+          <div className="social col-2">
+            Social Media Links
+          </div>
         </div>
       </div>
     </header>

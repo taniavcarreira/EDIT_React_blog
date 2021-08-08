@@ -1,15 +1,18 @@
 .header{
     background-color:#333333;
 }
-.header > div{
+/* .header > div{
     display:flex;
     justify-content: space-between;
     align-items: baseline;
-}
+} */
 
 .headerMenu {
-    margin:10px 0;
+    margin:0 0 10px 0;
     color:#fafafa;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .headerMenu a{
@@ -27,6 +30,11 @@
 
 .navbar {
     justify-content: left;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 .social {
     text-align: right;
