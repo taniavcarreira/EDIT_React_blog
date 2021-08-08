@@ -1,12 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header.js'
+import Header from './components/Header/header.js'
+import Blogpost from './containers/Blogpost';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Tania
+        <Header/>
+        <Blogpost />
       </header>
     </div>
   );
