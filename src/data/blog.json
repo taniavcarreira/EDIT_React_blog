@@ -1,0 +1,29 @@
+{
+    "data" : [
+        {
+            "id": 1,
+            "blogCategory": "mY-Passions",
+            "blogTitle" : "Viagens de mota por Portugal",
+            "slug": "viagens-mota-portugal",
+            "postedOn": "Agosto 08, 2021",
+            "author": "Tania Carreira",
+            "blogImage": "Social.jpg",
+            "blogText": "Apesar do nosso instinto aventureiro nos fazer ansiar por viagens além fronteiras, é sempre com um grande prazer que regressamos ao país onde vivemos, e ao país que nos viu nascer. Fazemos viagens de mota por Portugal sempre que podemos desde sempre. Em todas as vezes, visitando ou revisitando locais, descobrimos algo de novo, surpreendente e encantador. Sem excepção. Porque a cada dia que passa olhamos o mundo com outros olhos.
+                        Portugal é dono de uma riqueza cultural única, de estradas panorâmicas das melhores que há no mundo, de uma gastronomia incomparável e de um povo amistoso que recebe os visitantes de sorriso no rosto. Gentes e lugares que nos alimentam a alma. Que nos devolvem felicidade e paz de espírito. Que completam em harmonia um roteiro em duas rodas com toda a liberdade que o meio nos proporciona.
+                        Por entre as boas estradas do nosso país, saltam-nos ao caminho os lugarejos, os monumentos, as paisagens naturais diversificadas de norte a sul e aquele belo refúgio para uma deliciosa refeição. Daqueles que só em Portugal encontramos.
+                        Somos um país rodeado de mar, onde algumas das melhores praias mundiais se descobrem. Somos um país de imponentes parques naturais espalhados por todo o seu território. Do Norte verdejante e montanhoso, aos planaltos do Alentejo de tons floridos e dourados. Portugal é lindo. Atrevam-se a ir explorá-lo. Aqui reunimos muitos dos roteiros que por cá fazemos. #euficoemportugal"
+        },
+        {
+            "id" : 2,
+            "blogCategory": "Motorcicles",
+            "blogTitle": "The Litas: Global Womens Motorcycle Collective",
+            "slug": "the-litas",
+            "postedOn": "Agosto 09, 2021",
+            "author": "Tania Carreira",
+            "blogImage": "Myself.jpg",
+            "blogText": "We’ve been inspired by Grace for awhile, from her unique style to the way she’s decided to live her life - on her own terms.
+                        This year she and her business partner, Krista, opened Holistic Salon in downtown Denver, Colorado. They’ve created a unique space where women can feel loved, embraced, and sexy as hell with amazing hair. When they’re not in the salon, they’re out riding & running @thelitasdenver together.
+                        We sat down with Grace to find out how she got into riding, how she decided to start her own business, and get her philosophy on life. Here’s how it went…"
+        }
+    ]
+}

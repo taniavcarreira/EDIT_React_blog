@@ -13,8 +13,8 @@ const Hero  = (props) => {
         <div className="container">
             <Card>
                 <Logo/>
-                <h1>m<span class="y">Y</span> first project width REACT</h1>
-                <h2>All you need to know about me <span class="y_me">@TaniaVCarreira</span></h2>
+                <p className="h1">m<span class="y">Y</span> first project width REACT</p>
+                <p className="h2">All you need to know about me <span class="y_me">@TaniaVCarreira</span></p>
             </Card>
         </div>
     </div>

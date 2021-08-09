@@ -1,11 +1,16 @@
 import React from 'react';
 import './style.css'
+import BlogPost from '../../components/BlogPost/blogPost';
+import Aside from '../../components/Aside/aside';
 
-const Blogpost = props => {
+const Blogpost = (props) => {
     return (
-        <div id="blogPost">
-            Blogpost
-        </div>
+        <section className="container">
+            <div className="row main">
+                <BlogPost/>
+                <Aside/>
+            </div>
+        </section>
     )
 }
 

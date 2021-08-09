@@ -9,7 +9,7 @@ import './logo.css'
 const Logo = (props) => {
   return(
     <div className="logo">
-        <img src="Blog/src/components/Logo/logo.png"></img>
+        <img src={require('../Logo/logo.png')}/>
     </div>
    )
 
