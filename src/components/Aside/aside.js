@@ -12,14 +12,18 @@ const Aside = (props) => {
     <div className = "asideContainer col-offset-1 col-3" >
         <Card>
             <div className = "cardHeader aboutMe">
-            <span className = "title" > About Me </span> 
+                <span className = "title" > About Me </span> 
             </div>
             <figure className = "profileImageContainer">
-            <img src = "https://images.unsplash.com/photo-1560199887-55dcf2cc769f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-            className = "imgfit"
-            alt = "Tania V.Carreira"/>
+                <img src = "https://scontent.fopo2-1.fna.fbcdn.net/v/t1.6435-9/34469361_10156548796342722_6001111817038856192_n.jpg?_nc_cat=103&ccb=1-4&_nc_sid=09cbfe&_nc_eui2=AeHnErmBoNM0rHJhfOYyf8avqGBbSTN9w6yoYFtJM33DrFf2Vgzxzizvcb3Z4OOm5pk&_nc_ohc=ulzzzCkW2REAX_yKmlk&_nc_ht=scontent.fopo2-1.fna&oh=3f43b16e65196ea80b99c66b2530b6e3&oe=6134D5B2"
+                className = "imgfit"
+                alt = "Tania V.Carreira"/>
             </figure> 
-            <p className = "profileContent"></p> 
+            <p className = "profileContent">
+            <span>"Hello World!" I'm Tania Carreira,</span> 
+            <br/>A Digital Marketing Strategist and E-commerce Manager studying everyday to become a FrontEnd developper. 
+            <b> Find out more</b> about me & mY side-passions
+            </p> 
         </Card>
         <Card>
             <div className = "cardHeader socialNetwork" >
