@@ -16,7 +16,8 @@ const Header = (props) => {
             <a href="#">About me </a>
             <a href="#">Curriculum </a>
             <a href="#">Portfolio </a>
-            <a href="#">Contact</a>
+            <a href="/blog">Blog </a>
+            <a href="/blogpost">Blogpost</a>
           </nav>
           <div className="social col-2">
             Social Media Links
