@@ -1,5 +1,8 @@
 .header{
     background-color:#333333;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 /* .header > div{
     display:flex;

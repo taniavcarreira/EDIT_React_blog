@@ -9,7 +9,7 @@ import './aside.css'
 
 const Aside = (props) => {
     return ( 
-    <div className = "asideContainer col-offset-1 col-3" >
+    <div className = "asideContainer col-offset-1 col-12 col-md-3" >
         <Card>
             <div className = "cardHeader aboutMe">
                 <span className = "title" > About Me </span> 

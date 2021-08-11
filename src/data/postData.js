@@ -1,4 +1,4 @@
-{
+export const postData = {
     "data" : [
         {
             "id": 1,

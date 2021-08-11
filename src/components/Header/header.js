@@ -12,7 +12,7 @@ const Header = (props) => {
       <div className="container">
         <div className="headerMenu row">
           <nav className="navbar col">
-            <a href="#"><span class="y">Y</span>-CanIfly</a>
+            <a href="#"><span className="y">Y</span>-CanIfly</a>
             {/* <a href="#">About me </a>
             <a href="#">Curriculum </a>
             <a href="#">Portfolio </a> */}
