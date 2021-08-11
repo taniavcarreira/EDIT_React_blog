@@ -1,16 +1,17 @@
 import React from 'react'
-
-/**
-* @author
-* @function Blog
-**/
+import './style.css'
+import BlogList from '../../components/BlogPost/blogPost';
+import Aside from '../../components/Aside/aside';
 
 const Blog = (props) => {
-  return(
-    <div>Blog
-    </div>
-   )
+  return (
+      <section className="container">
+          <div className="row main">
+              <BlogList {...props}/>
+              <Aside/>
+          </div>
+      </section>
+  )
+}
 
- }
-
-export default Blog
+export default Blog;

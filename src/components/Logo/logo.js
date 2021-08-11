@@ -1,6 +1,6 @@
 import React from 'react'
 import './logo.css'
-
+import logo from './logo.png'
 /**
 * @author
 * @function Logo
@@ -9,7 +9,7 @@ import './logo.css'
 const Logo = (props) => {
   return(
     <div className="logo">
-        <img src={require('../Logo/logo.png')}/>
+        <img src={logo}/>
     </div>
    )
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import './comment.css';
-import DynamicForm from '../DynamicForm';
-import ListComments from '../ListComments';
+import './commentBox.css';
+import DynamicForm from '../DynamicForm/dynamicForm';
+import ListComments from '../ListComments/listComments';
 
 
 const fields = [
@@ -11,7 +11,7 @@ const fields = [
     placeholder:'username'
   },
   {
-    type:'email',
+    type:'text',
     name:'email',
     placeholder:'your email'
   },
@@ -45,14 +45,15 @@ class CommentBox extends React.Component{
         }
       ]
     };
+  }
 
-    addComment = ({ comment }) => {
+    addComment = (comment) => {
       console.log(comment)
       const newComment = {
         id: 2,
-        author:'Tania Carreira',
-        email:'tanyavyeyra@gmail.com',
-        message:'Comentário 1',
+        author:comment.username,
+        email:comment.email,
+        message:comment.comment
       }
 
       const commentsCopy = [].concat(this.state.comments); // criar uma variável com cópia dos comentários para manipular os dados
@@ -76,21 +77,20 @@ class CommentBox extends React.Component{
       
       let buttonText = "Show Comments";
 
-      if (this.state.displayComments === true){
-        buttonText ='Hide Comments';
-        commentNodes = <div className="comment-list">{comments}</div>;
-      }
+      // if (this.state.displayComments === true){
+      //   buttonText ='Hide Comments';
+      //   commentNodes = <div className="comment-list">{comments}</div>;
+      // }
     
       return (
         <div className="comment-box">
           <h2>Share your ideas</h2>
-          <DynamicForm field={fields} onSubmit={this.addComment.bind(this)}/>
+          <DynamicForm fields={fields} submitFn={this.addComment}/>
           <h3>Comments</h3>
           <ListComments comments={this.state.comments} removeGn={this.removeComment}/>
         </div>
       ); //end of return
     } //end of render
   }
-}
 
 export default CommentBox;

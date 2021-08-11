@@ -1,20 +1,35 @@
-// import CommentBox from '../CommentBox/commentBox'
 import React, {useState, useEffect} from 'react'
+import {useParams} from 'react-router-dom'
 import Card from '../UI/Card'
 import './blogPost.css'
 import blogPost from '../../data/blog.json'
-import {postData} from '../../data/postData'
 import CommentBox from '../CommentBox/commentBox'
 
+const pathImage = '/imgs/'
 export const BlogPost = (props) => {
   
-  const [post, setPost] = useState({}) 
+  const [post, setPost] = useState({
+    id:'' ,
+    blogCategory:'', 
+    blogTitle:'',
+    slug: '',
+    postedOn:'', 
+    author:'',
+    blogImage:'',
+    blogText:''
+  }) 
+  const [postId, setPostId] = useState('')
+
+let { postIdUrl } = useParams();
+console.log(postIdUrl)
 
   useEffect(() => {
-      const postId = 1 // Nao sei como ir buscar a informação do ID da Página
-      const post = postData.data.find(post => post.id == postId)
+      const post = blogPost.data.find(post => post.id == postIdUrl)
       setPost(post);
-  },post)
+      setPostId(postIdUrl)
+  },[post]) //[post, ]
+
+  if(post.blogImage == "") return null;
 
   return(
     <>
@@ -26,15 +41,15 @@ export const BlogPost = (props) => {
             <span className="postedBy">Posted on {post.postedOn} by {post.author}</span>
         </div>
         <figure className="figure postImageContainer">
-            <img className="figure-img" src={post.blogImage}/>
+            <img className="figure-img" src={`${pathImage}${post.blogImage}`} alt="Post Image"/> 
         </figure>
         <div className="postContent">
           <h3>{post.blogTitle}</h3>
           <p>{post.blogText}</p>
         </div>
+    <CommentBox/>
     </Card>
     </div>
-    {/* <CommentBox/> */}
     </>
    )
 }
